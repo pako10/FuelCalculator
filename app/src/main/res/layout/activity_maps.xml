@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/searchViewQappla"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:floatingSearch_searchBarMarginLeft="5dp"
+        app:floatingSearch_searchBarMarginTop="5dp"
+        app:floatingSearch_searchBarMarginRight="5dp"
+        app:floatingSearch_searchHint="Escriba su Destino"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_leftActionMode="noLeftAction"
+        app:floatingSearch_menu="@menu/menu_main"
+        app:floatingSearch_hideOverflowMenuWhenFocused="true"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true" />
+
+    <fragment
+        android:layout_below="@+id/searchViewQappla"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.pakoandrade.fuelcalculator.MapsActivity" />
+
+</RelativeLayout>

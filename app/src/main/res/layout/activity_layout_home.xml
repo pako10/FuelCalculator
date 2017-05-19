@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/searchViewQappla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:floatingSearch_searchBarMarginLeft="5dp"
+            app:floatingSearch_searchBarMarginTop="5dp"
+            app:floatingSearch_searchBarMarginRight="5dp"
+            app:floatingSearch_searchHint="Buscar....Usuario/Equipo"
+            app:floatingSearch_suggestionsListAnimDuration="250"
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_leftActionMode="noLeftAction"
+            app:floatingSearch_hideOverflowMenuWhenFocused="true"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true">
+
+        </com.arlib.floatingsearchview.FloatingSearchView>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+
+    <include layout="@layout/activity_maps"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+    <!-- app:floatingSearch_menu="@menu/menu_main"-->
